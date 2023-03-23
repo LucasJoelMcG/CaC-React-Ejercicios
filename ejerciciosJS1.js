@@ -146,11 +146,11 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  switch (numero) {
-    case numero > 0: {
+  switch (Math.sign(numero)) {
+    case 1: {
       return "Es positivo";
     }
-    case numero < 0: {
+    case -1: {
       return "Es negativo";
     }
     default:
